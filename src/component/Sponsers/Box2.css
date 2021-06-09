@@ -1,0 +1,14 @@
+#Box2-Body{
+    /* border:1px solid green; */
+    height: 16rem;
+    width: 16rem;
+    /* border-radius: 2rem; */
+    margin: auto;
+}
+
+#box-body-image
+{
+    /* border-radius: 2rem; */
+    height: inherit;
+    width: inherit;
+}

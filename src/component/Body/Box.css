@@ -1,0 +1,45 @@
+#box-body{
+    border: 2px solid green;
+    height: 16rem;
+    width: 20rem;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+}
+
+#img{
+    height: 8rem;
+    border:1px solid green;
+    width: 35%;
+
+}
+
+#heading{
+    width: inherit;
+    /* border:1px solid green; */
+    width:95%;
+    text-align: center;
+}
+
+#content
+{
+    width: 95%;
+    /* max-width:100%; */
+    /* border:1px solid green; */
+    height: 10rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* overflow: ; */
+    /* white-space: pre-line; */
+    word-break: break-all;
+    
+}
+div span{
+    max-width:60%;
+    
+}
