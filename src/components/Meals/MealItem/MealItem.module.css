@@ -1,0 +1,24 @@
+.meal {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-bottom: 1px solid #ccc;
+    background: linear-gradient(to top ,rgb(228, 210, 210) ,rgb(243, 243, 230));
+  }
+  
+  .meal h3 {
+    margin: 0 0 0.25rem 0;
+  }
+  
+  .description {
+    font-style: italic;
+  }
+  
+  .price {
+    margin-top: 0.25rem;
+    font-weight: bold;
+    color: #ad5502;
+    font-size: 1.25rem;
+  }

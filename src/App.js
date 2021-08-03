@@ -1,21 +1,30 @@
-import Header from './component/Header.js'
-import Body1 from './component/Body/Body1'
-import Body2 from './component/Body/Body2'
-import Sponsers from './component/Sponsers/Sponsers'
-import ContactUs from './component/Contact/ContactUs'
+import {  useState } from 'react';
+import Cart from './components/Cart/Cart';
+
+import Header from './components/Layout/Header';
+import Meals from './components/Meals/Meals';
+import CartProvider from './store/CartProvider';
 
 function App() {
+  const [cartIsShown, setCartIsShown] = useState();
+
+  const showCartHandler = () =>{
+    setCartIsShown(true)
+    
+  }
+  const hideCartHandler = () =>{
+    setCartIsShown(false)
+  }
+
   return (
-    <div >
-      <Header/>
-      <Body1/>
-      <Body2 />
-      <Sponsers/>
-      <ContactUs />
-    </div>
+    <CartProvider>
+      {cartIsShown && <Cart onClose={hideCartHandler}/>}
+      <Header onShowCart = {showCartHandler}/>
+      <main>
+        <Meals />
+      </main>
+    </CartProvider>
   );
 }
 
 export default App;
-
-
